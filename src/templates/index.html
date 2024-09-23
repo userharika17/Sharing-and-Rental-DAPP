@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sharing App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="{{ url_for('index') }}">Home</a></li>
+      <li><a href="{{ url_for('register_object') }}">Register Object</a></li>
+      <li><a href="{{ url_for('rent_object') }}">Rent Object</a></li>
+      <li><a href="{{ url_for('return_object') }}">Return Object</a></li>
+    </ul>
+  </nav>
+  <h1>Welcome to Sharing App</h1>
+  <p>This is a decentralized sharing app built on Ethereum blockchain.</p>
+</body>
+</html>

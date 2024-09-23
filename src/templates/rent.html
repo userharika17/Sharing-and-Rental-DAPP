@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rent Object</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="{{ url_for('index') }}">Home</a></li>
+      <li><a href="{{ url_for('register_object') }}">Register Object</a></li>
+      <li><a href="{{ url_for('rent_object') }}">Rent Object</a></li>
+      <li><a href="{{ url_for('return_object') }}">Return Object</a></li>
+    </ul>
+  </nav>
+  <h1>Rent Object</h1>
+  <form action="" method="post">
+    <label for="object_id">Object ID:</label>
+    <input type="number" id="object_id" name="object_id"><br><br>
+    <input type="submit" value="Rent">
+  </form>
+</body>
+</html>
